@@ -1,67 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SPA</title>
-    <link rel="stylesheet" href="/SPA/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SPA</title>
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="/script.js" defer></script>
+</head>
+
+<body>
+  <div class="contain">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-cl">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Find Home</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <a class="navbar-brand">Find Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" id="homeBtn">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" id="aboutBtn">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Neighborhood</a>
+              <a class="nav-link" id="neighborhoodBtn">Neighborhood</a>
             </li>
             <li class="nav-item right">
-              <a
-                class="nav-link disabled"
-                href="#"
-                tabindex="-1"
-                aria-disabled="true"
-                >Disabled</a
-              >
+              <a class="nav-link " tabindex="-1" aria-disabled="true" id="galleryBtn">Gallery</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <div class="home">
+    <div class="home" id="home">
       <div class="home-content">
         <br />
         <br />
@@ -71,46 +53,24 @@
         <p class="font4">Find Your Home in Boerum Hill</p>
         <br />
         <br />
-        <img
-          loading="lazy"
-          width="25"
-          height="80"
-          class="fl-photo-img wp-image-271 ll-at-font ll-at-size arrow-down"
-          src="https://theraphael.wpengine.com/wp-content/uploads/2020/05/arrow-down.png"
-          alt="arrow-down"
-          itemprop="image"
-          title="arrow-down"
-        />
+        <img loading="lazy" width="25" height="80" class="fl-photo-img wp-image-271 ll-at-font ll-at-size arrow-down"
+          src="https://theraphael.wpengine.com/wp-content/uploads/2020/05/arrow-down.png" alt="arrow-down"
+          itemprop="image" title="arrow-down" />
       </div>
-      <img
-        loading="lazy"
-        class="fl-photo-img wp-image-442 ll-at-font ll-at-size home-img"
+      <img loading="lazy" class="fl-photo-img wp-image-442 ll-at-font ll-at-size home-img"
         src="https://therafaelbk.com/wp-content/uploads/2020/08/Rafael-see-through-windows-xo.png"
-        alt="Rafael-see-through-windows xo"
-        itemprop="image"
-        srcset="
-          https://www.therafaelbk.com/wp-content/uploads/2020/08/Rafael-see-through-windows-xo.png         546w,
-          https://www.therafaelbk.com/wp-content/uploads/2020/08/Rafael-see-through-windows-xo-197x300.png 197w
-        "
-        title="Rafael-see-through-windows xo"
-      />
-      <img
-        loading="lazy"
-        class="fl-photo-img wp-image-440 size-full ll-at-font ll-at-size home-img"
-        src="https://www.therafaelbk.com/wp-content/uploads/2020/08/r19.png"
-        alt="r19"
-        itemprop="image"
-        height="831"
-        width="546"
-        srcset="
-          https://www.therafaelbk.com/wp-content/uploads/2020/08/r19.png         546w,
-          https://www.therafaelbk.com/wp-content/uploads/2020/08/r19-197x300.png 197w
-        "
-        sizes="(max-width: 546px) 100vw, 546px"
-        title="r19"
-      />
+        alt="Rafael-see-through-windows xo" itemprop="image" srcset="
+            https://www.therafaelbk.com/wp-content/uploads/2020/08/Rafael-see-through-windows-xo.png         546w,
+            https://www.therafaelbk.com/wp-content/uploads/2020/08/Rafael-see-through-windows-xo-197x300.png 197w
+          " title="Rafael-see-through-windows xo" />
+      <img loading="lazy" class="fl-photo-img wp-image-440 size-full ll-at-font ll-at-size home-img"
+        src="https://www.therafaelbk.com/wp-content/uploads/2020/08/r19.png" alt="r19" itemprop="image" height="831"
+        width="546" srcset="
+            https://www.therafaelbk.com/wp-content/uploads/2020/08/r19.png         546w,
+            https://www.therafaelbk.com/wp-content/uploads/2020/08/r19-197x300.png 197w
+          " sizes="(max-width: 546px) 100vw, 546px" title="r19" />
     </div>
-    <div class="about-us">
+    <div class="about-us" id="about">
       <div class="content">
         <br />
         <br />
@@ -151,7 +111,7 @@
         <br />
       </div>
     </div>
-    <div class="neighborhood">
+    <div class="neighborhood" id="neighborhood">
       <div class="neighborhood-content">
         <br />
         <br />
@@ -170,14 +130,10 @@
       <div class="map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2965.0824050173574!2d-93.63905729999999!3d41.998507000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sWebFilings%2C+University+Boulevard%2C+Ames%2C+IA!5e0!3m2!1sen!2sus!4v1390839289319"
-          width="100%"
-          height="100%"
-          frameborder="0"
-          style="border: 0"
-        ></iframe>
+          width="100%" height="100%" frameborder="0" style="border: 0"></iframe>
       </div>
     </div>
-    <div class="gallery">
+    <div class="gallery" id="gallery">
       <div class="gallery-content">
         <br />
         <br />
@@ -190,42 +146,32 @@
       <div class="gallery-img">
         <div class="slider">
           <div class="slide">
-            <img
-              src="https://www.therafaelbk.com/wp-content/uploads/2021/06/15_011PRINTSIZE-1_mls-1024x628.jpg"
-              class="fl-slideshow-image-img slider-img"
-              alt=""
-            />
+            <img src="https://www.therafaelbk.com/wp-content/uploads/2021/06/15_011PRINTSIZE-1_mls-1024x628.jpg"
+              class="fl-slideshow-image-img slider-img" alt="" />
           </div>
           <div class="slide">
-            <img
-              src="https://www.therafaelbk.com/wp-content/uploads/2021/06/02_004PRINTSIZE-1_mls-1024x634.jpg"
-              class="fl-slideshow-image-img slider-img"
-              alt=""
-            />
+            <img src="https://www.therafaelbk.com/wp-content/uploads/2021/06/02_004PRINTSIZE-1_mls-1024x634.jpg"
+              class="fl-slideshow-image-img slider-img" alt="" />
           </div>
           <div class="slide">
-            <img
-              src="https://www.therafaelbk.com/wp-content/uploads/2021/06/10_4591007PRINTSIZE_mls-1024x640.jpg"
-              class="fl-slideshow-image-img slider-img"
-              alt=""
-            />
+            <img src="https://www.therafaelbk.com/wp-content/uploads/2021/06/10_4591007PRINTSIZE_mls-1024x640.jpg"
+              class="fl-slideshow-image-img slider-img" alt="" />
           </div>
           <div class="slide">
-            <img
-              src="https://www.therafaelbk.com/wp-content/uploads/2021/06/12_012PRINTSIZE_mls-682x1024.jpg"
-              class="fl-slideshow-image-img slider-img"
-              alt=""
-            />
+            <img src="https://www.therafaelbk.com/wp-content/uploads/2021/06/12_012PRINTSIZE_mls-682x1024.jpg"
+              class="fl-slideshow-image-img slider-img" alt="" />
           </div>
           <div class="slide">
-            <img
-              src="https://www.therafaelbk.com/wp-content/uploads/2021/06/12_5422008PRINTSIZE_mls-1024x641.jpg"
-              class="fl-slideshow-image-img slider-img"
-              alt=""
-            />
+            <img src="https://www.therafaelbk.com/wp-content/uploads/2021/06/12_5422008PRINTSIZE_mls-1024x641.jpg"
+              class="fl-slideshow-image-img slider-img" alt="" />
           </div>
+          <button class="slider__btn slider__btn--left">&larr;</button>
+          <button class="slider__btn slider__btn--right">&rarr;</button>
         </div>
       </div>
     </div>
-  </body>
+  </div>
+
+</body>
+
 </html>
