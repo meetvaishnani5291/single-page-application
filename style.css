@@ -5,6 +5,7 @@
   justify-self: center;
 }
 .about-us {
+  padding-top: 50px;
   color: white;
   background-color: black;
 }
@@ -47,6 +48,7 @@
   width: 50%;
 }
 .home {
+  padding-top: 70px;
   display: flex;
 }
 .map {
@@ -161,3 +163,18 @@
   right: 6%;
   transform: translate(50%, -50%);
 }
+.gallery-img {
+  position: relative;
+  height: 60rem;
+  width: 60rem;
+  margin: auto;
+}
+.navbar-cl {
+  z-index: 50;
+  width: 100%;
+  position: fixed !important;
+  top: 0%;
+}
+/* .contain {
+  position: fixed;
+} */
